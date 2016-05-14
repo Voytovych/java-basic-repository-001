@@ -6,16 +6,10 @@ public class Start {
 
 		Start start = new Start();
 
-		// Виклик мутоду і передача заначення як параметра
 		start.printString(start.getNewValue(start.getString()));
 
-		// Виклик методу і поверння результату в якості return для іншого методу
-		// (типи повинні співпадати)
 		start.printString(start.returnMethod());
 
-		// Виклик методу, який в кінці знову викликає сам себе, до тих пір доки
-		// не виконається умова
-		// ("рекурсія")
 		start.recursive(0);
 
 	}
@@ -43,7 +37,7 @@ public class Start {
 		}
 		System.out.println(value);
 
-		return recursive(value);// рекурсія
+		return recursive(value);// recursion
 	}
 
 	public String returnExample(int count) {
@@ -51,7 +45,7 @@ public class Start {
 		if (count == 0) {
 			return "error";
 		}
-		// тіло методу
+		// body method
 		if (count < 0) {
 			return "negative";
 		} else {
@@ -62,9 +56,9 @@ public class Start {
 	public void returnExampleVoid(int count) {
 
 		if (count == 0) {
-			return; // достроковий вихід з мутоду
+			return;
 		}
-		// тіло методу
+		// body method
 
 	}
 
