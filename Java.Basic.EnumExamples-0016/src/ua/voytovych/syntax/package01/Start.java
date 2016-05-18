@@ -4,12 +4,10 @@ public class Start {
 
 	public static void main(String[] args) {
 
-		// отримання всіх значень enum
 		for (int i = 0; i < GameLevel.values().length; i++) {
 			System.out.println(GameLevel.values()[i]);
 		}
 
-		// використання в обєктах
 		Game game = new Game();
 		game.setGameLevel(GameLevel.BEGINNER);
 
