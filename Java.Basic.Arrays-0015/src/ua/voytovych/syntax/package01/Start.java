@@ -9,7 +9,6 @@ public class Start {
 
 	public static void main(String[] args) {
 
-		// одновимірний масив
 		// int [] array = new int[10];
 		Integer[] array = new Integer[10];
 
@@ -19,7 +18,7 @@ public class Start {
 			array[i] = random.nextInt(100);
 		}
 
-		int[][] table1 = new int[3][5];// двохвимірний пустий масив
+		int[][] table1 = new int[3][5];
 
 		int[][] table2 = new int[][] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };// двохвимірний
 																										// заповнений
@@ -27,7 +26,7 @@ public class Start {
 
 		System.out.println("table2.length = " + table2.length);
 
-		for (int i = 0; i <= 2; i++) {// пробіг по строкам
+		for (int i = 0; i <= 2; i++) {
 			for (int j = 0; j <= 4; j++) {
 				System.out.println(table2[i][j] + " ");
 			}
@@ -35,7 +34,6 @@ public class Start {
 		}
 		System.out.println();
 
-		// //заміна значення по індексу (присвоювання)
 		// table2[1][3] = 0;
 
 		showTriangle();
@@ -53,7 +51,6 @@ public class Start {
 
 	}
 
-	// двохвимірний несиметричний масив
 	private static void showTriangle() {
 		char[][] triangleArray = new char[10][];
 		triangleArray[0] = new char[1];
@@ -67,14 +64,12 @@ public class Start {
 		triangleArray[8] = new char[9];
 		triangleArray[9] = new char[10];
 
-		// заповнення всіх елементів символом *
 		for (int i = 0; i < triangleArray.length; i++) {
 			for (int j = 0; j < triangleArray[i].length; j++) {
 				triangleArray[i][j] = '*';
 			}
 		}
 
-		// вивід трикутника
 		for (int i = 0; i < triangleArray.length; i++) {
 			for (int j = 0; j < triangleArray[i].length; j++) {
 				System.out.print(triangleArray[i][j]);
